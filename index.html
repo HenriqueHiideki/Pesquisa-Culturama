@@ -11,14 +11,14 @@
     <header>
     <h1>Pesquisa Culturama</h1>
 </header>
-        <section>
-            <h1>Dados Pessoais</h1>
+    <section>
+        <h1>Dados Pessoais</h1>
             <p>Queremos te conhecer melhor! Para oferecer conteúdos e ofertas cada vez mais personalizados, preparamos esta pesquisa rápida. Leva apenas alguns instantes e você nos ajuda a criar soluções feitas sob medida para você. Seus dados estão seguros conosco.</p>
-        </section>
-        <section>
-            <!--DADOS PESSOAIS-->
-            <fieldset>
-                <legend>Dados Pessoais</legend>
+    </section>
+    <section>
+        <!--DADOS PESSOAIS-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
                 <form action="" method="get">
                     <label for="userName">Nome</label>
                     <input type="text" id="userName" name="Name" required>
@@ -39,10 +39,9 @@
                     <input type="file" id="userPhoto" name="Foto"  accept="image/*" placeholder="Insira uma foto sua !">
                         <br>
                     <button type="submit">Enviar</button>
-                </form>
-            </fieldset>
-            <fieldset>
-                <form action="" method="get">
+                
+        </fieldset>
+        <fieldset>
                 <legend>Perfil</legend>
 
                 <input type="radio" id="userGender" name="Gender" value="Masculino">
@@ -94,8 +93,34 @@
                 <input type="text" name="userCity" id="city">
 
                 <button type="submit">Selecionar</button>
-                </form>
-            </fieldset>
+
+        </fieldset>
+        <fieldset>
+            <legend>Hábitos</legend>
+            <p>Redes Sociais</p>
+            <input type="checkbox" name="socialMedia" value="Instagram" id="social">
+            <label for="social">Instagram</label>
+
+            <input type="checkbox" name="social" value="Facebook">
+            <label for="social">Facebook</label>
+
+            <input type="checkbox" name="social" value="Linkedin">
+            <label for="social">Linkedin</label>
+
+            <input type="checkbox" name="social" value="X">
+            <label for="social">X</label>
+                <br>
+            <label for="musicStyle">Estilo Musical</label>
+            <input list="styleMusic" id="musicStyle" name="userStyleMusic" type="text">
+                <datalist id="styleMusic">
+                    <option value="Rock"></option>
+                    <option value="Pop"></option>
+                    <option value="Samba"></option>
+                    <option value="Sertanejo"></option>
+                </datalist>
+
+            </form>
+        </fieldset>
         </section>
 </body>
 </html>
