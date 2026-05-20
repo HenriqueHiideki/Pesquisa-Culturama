@@ -38,8 +38,6 @@
                     <label for="userPhoto">Upload de Foto</label>
                     <input type="file" id="userPhoto" name="Foto"  accept="image/*" placeholder="Insira uma foto sua !">
                         <br>
-                    <button type="submit">Enviar</button>
-                
         </fieldset>
         <fieldset>
                 <legend>Perfil</legend>
@@ -140,7 +138,14 @@
 
         <fieldset>
             <legend>Confirmações</legend>
+            <input type="checkbox" name="userLgpd" id="condicoesLgpd" value="confirmed" required>
+            <label for="condicoesLgpd">Eu aceito participar da pesquisa</label>
+
+            <input type="checkbox" name="userResult" id="resultadoLgpd" value="confirmed" required>
+            <label for="resultadoLgpd">Desejo receber o resultado por E-mail</label>
         </fieldset>
+            <br>
+        <button type="submit">Enviar</button>
         </form>
         </section>
 </body>
