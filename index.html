@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/culturama-favico.png">
     <title>Document</title>
 </head>
 
 <body>
+    <main>
     <header>
+        <img src="img/logo-culturama.png" alt="Logo da Culturama">
     <h1>Pesquisa Culturama</h1>
 </header>
     <section>
         <h1>Dados Pessoais</h1>
-            <p>Queremos te conhecer melhor! Para oferecer conteúdos e ofertas cada vez mais personalizados, preparamos esta pesquisa rápida. Leva apenas alguns instantes e você nos ajuda a criar soluções feitas sob medida para você. Seus dados estão seguros conosco.</p>
+        <p>Queremos te conhecer melhor! Para oferecer conteúdos e ofertas cada vez mais personalizados, preparamos esta pesquisa rápida. Leva apenas alguns instantes e você nos ajuda a criar soluções feitas sob medida para você. Seus dados estão seguros conosco.</p>
     </section>
     <section>
+        <form action="" method="get">
         <!--DADOS PESSOAIS-->
         <fieldset>
             <legend>Dados Pessoais</legend>
-                <form action="" method="get">
                     <label for="userName">Nome</label>
                     <input type="text" id="userName" name="Name" required>
                         <br>
@@ -40,57 +43,57 @@
                         <br>
         </fieldset>
         <fieldset>
-                <legend>Perfil</legend>
+            <legend>Perfil</legend>
 
-                <input type="radio" id="userGender" name="Gender" value="Masculino">
-                <label for="userGender">Masculino</label>
+            <input type="radio" id="userGender" name="Gender" value="Masculino">
+            <label for="userGender">Masculino</label>
 
-                <input type="radio" id="userGender" name="Gender" value="Feminino">
-                <label for="userGender">Feminino</label>
-                    <br>
-                <label for="MaritalStatus">Estado Civil:</label>
-                <select name="MaritalStatus" id="MaritalStatus">
-                    <option value="noSelected">Selecione...</option>
-                    <option value="casado">Casado(a)</option>
-                    <option value="solteiro(a)">Solteiro(a)</option>
-                    <option value="viuvo(a)">Viúvo(a)</option>
-                    <option value="divorciado">Divorciado(a)</option>
-                </select>
-                    <br>
-                <label for="userState">Estado Federativo:</label>
-                <select name="States" id="userState">
-                    <option value="AC">AC, Acre</option>
-                    <option value="AL">AL, Alagoas</option>
-                    <option value="AP">AP, Amapá</option>
-                    <option value="AM">AM, Amazonas</option>
-                    <option value="BA">BA, Bahia</option>
-                    <option value="CE">CE, Ceará</option>
-                    <option value="DF">DF, Distrito Federal</option>
-                    <option value="ES">ES, Espírito Santo</option>
-                    <option value="GO">GO, Goiás</option>
-                    <option value="MA">MA, Maranhão</option>
-                    <option value="MT">MT, Mato Grosso</option>
-                    <option value="MS">MS, Mato Grosso do Sul</option>
-                    <option value="MG">MG, Minas Gerais</option>
-                    <option value="PA">PA, Pará</option>
-                    <option value="PB">PB, Paraíba</option>
-                    <option value="PR">PR, Paraná</option>
-                    <option value="PE">PE, Pernambuco</option>
-                    <option value="PI">PI, Piauí</option>
-                    <option value="RJ">RJ, Rio de Janeiro</option>
-                    <option value="RN">RN, Rio Grande do Norte</option>
-                    <option value="RS">RS, Rio Grande do Sul</option>
-                    <option value="RO">RO, Rondônia</option>
-                    <option value="RR">RR, Roraima</option>
-                    <option value="SC">SC, Santa Catarina</option>
-                    <option value="SP">SP, São Paulo</option>
-                    <option value="SE">SE, Sergipe</option>
-                    <option value="TO">TO, Tocantins</option>
-                </select>
-                <label for="city">Cidade:</label>
-                <input type="text" name="userCity" id="city">
+            <input type="radio" id="userGender" name="Gender" value="Feminino">
+            <label for="userGender">Feminino</label>
+                <br>
+            <label for="MaritalStatus">Estado Civil:</label>
+            <select name="MaritalStatus" id="MaritalStatus">
+                <option value="noSelected">Selecione...</option>
+                <option value="casado">Casado(a)</option>
+                <option value="solteiro(a)">Solteiro(a)</option>
+                <option value="viuvo(a)">Viúvo(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+            </select>
+                <br>
+            <label for="userState">Estado Federativo:</label>
+            <select name="States" id="userState">
+                <option value="AC">AC, Acre</option>
+                <option value="AL">AL, Alagoas</option>
+                <option value="AP">AP, Amapá</option>
+                <option value="AM">AM, Amazonas</option>
+                <option value="BA">BA, Bahia</option>
+                <option value="CE">CE, Ceará</option>
+                <option value="DF">DF, Distrito Federal</option>
+                <option value="ES">ES, Espírito Santo</option>
+                <option value="GO">GO, Goiás</option>
+                <option value="MA">MA, Maranhão</option>
+                <option value="MT">MT, Mato Grosso</option>
+                <option value="MS">MS, Mato Grosso do Sul</option>
+                <option value="MG">MG, Minas Gerais</option>
+                <option value="PA">PA, Pará</option>
+                <option value="PB">PB, Paraíba</option>
+                <option value="PR">PR, Paraná</option>
+                <option value="PE">PE, Pernambuco</option>
+                <option value="PI">PI, Piauí</option>
+                <option value="RJ">RJ, Rio de Janeiro</option>
+                <option value="RN">RN, Rio Grande do Norte</option>
+                <option value="RS">RS, Rio Grande do Sul</option>
+                <option value="RO">RO, Rondônia</option>
+                <option value="RR">RR, Roraima</option>
+                <option value="SC">SC, Santa Catarina</option>
+                <option value="SP">SP, São Paulo</option>
+                <option value="SE">SE, Sergipe</option>
+                <option value="TO">TO, Tocantins</option>
+            </select>
+            <label for="city">Cidade:</label>
+            <input type="text" name="userCity" id="city">
 
-                <button type="submit">Selecionar</button>
+            <button type="submit">Selecionar</button>
 
         </fieldset>
         <fieldset>
@@ -145,9 +148,10 @@
             <label for="resultadoLgpd">Desejo receber o resultado por E-mail</label>
         </fieldset>
             <br>
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpar</button>
-        </form>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            </form>
         </section>
+    </main>
 </body>
 </html>
